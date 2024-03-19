@@ -1,4 +1,4 @@
-# Generated with JReleaser 1.2.0 at 2024-03-03T16:07:54.475907Z
+# Generated with JReleaser 1.2.0 at 2024-03-19T22:52:02.544756Z
 class Dbnary < Formula
   desc "Dbnary is an effort to provide multilingual lexical data extracted from wiktionary.
     The extracted data is made available as LLOD (Linguistic Linked Open Data). This data set has
@@ -7,9 +7,9 @@ class Dbnary < Formula
     generated pages. The extracted data is made available on the
     https://kaiko.getalp.org/about-dbnary/ website."
   homepage "https://kaiko.getalp.org/about-dbnary/dbnary-commands"
-  url "https://github.com/serasset/dbnary/releases/download/v3.1.14/dbnary-commands-3.1.14.zip"
-  version "3.1.14"
-  sha256 "88e1dd6362f75fb3b4377e0489b14643b4fdf98a5dcfefcdf578f6ca4ed959f5"
+  url "https://github.com/serasset/dbnary/releases/download/v3.1.15/dbnary-commands-3.1.15.zip"
+  version "3.1.15"
+  sha256 "8a7464ee8559634611201af7ce46050d6594fb791a6fc1356707e719edf509e8"
   license "MIT License"
 
   depends_on "openjdk@11"
@@ -21,6 +21,6 @@ class Dbnary < Formula
 
   test do
     output = shell_output("#{bin}/dbnary --version")
-    assert_match "3.1.14", output
+    assert_match "3.1.15", output
   end
 end
